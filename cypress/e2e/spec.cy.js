@@ -32,7 +32,7 @@ describe('template spec', () => {
     cy.get("#react-burger-menu-btn").click();
     cy.get("#logout_sidebar_link").click(); 
      // Assert that we are back on the login page
-    cy.url().should("be", "saucedemo.com");
+    cy.url().should("include", "saucedemo.com");
 
   })
 })
