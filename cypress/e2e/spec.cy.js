@@ -9,7 +9,7 @@ describe('Cypress test', () => {
     cy.get("input[placeholder='Password']").type("secret_sauce");
     cy.get("input[type='submit']").click();
     cy.wait(2000);
-    // Assert that the logo should be visible
+    // Assert that the logo should be visible.
     cy.get('div.app_logo').should('be.visible');
     cy.wait(1000);
     // Change the order sorting from high to low 
@@ -19,7 +19,7 @@ describe('Cypress test', () => {
     cy.get('button[data-test="add-to-cart-sauce-labs-fleece-jacket"]').click();
     cy.get('button[data-test="add-to-cart-sauce-labs-backpack"]').click();
     cy.get('button[data-test="add-to-cart-sauce-labs-bolt-t-shirt"]').click();
-    cy.wait(2000);
+    cy.wait(2500);
     // Remove one item from the cart
     cy.get('button[data-test="remove-sauce-labs-bolt-t-shirt"]').click();
     cy.wait(2000);
